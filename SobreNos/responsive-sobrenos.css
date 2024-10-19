@@ -1,0 +1,317 @@
+@media (max-width: 1200px){
+    /* -- -- -- -- Comentáriose -- -- -- -- */
+    #comentarios-title{
+        font-size: 42px;
+        font-family: 'Josefin Sans', sans-serif;
+        color: var(--title-color);
+        margin-bottom: 20px;
+    }
+
+    #comentarios{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-flow: row wrap;
+    }
+
+        .main{
+            width: 42%;
+            min-height: 380px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            margin: 0px 15px 40px 15px;                 
+        }
+}
+
+@media (max-width: 950px) {
+            /* -- -- -- -- About Us -- -- -- -- */
+             #aboutus-2{ 
+                width: 800px;
+                text-align: center;
+            }
+
+                #sobrenos-box-texto{
+                            float: left;
+                            width: 500px;
+                            padding-left: 40px;
+                            text-align: left;
+                        }
+
+        /* -- -- -- -- Comentáriose -- -- -- -- */
+        #comentarios-title{
+            font-size: 42px;
+            font-family: 'Josefin Sans', sans-serif;
+            color: var(--title-color);
+            margin-bottom: 0px;
+        }
+
+        #comentarios{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            flex-flow: row wrap;
+        }
+
+            .main{
+                width: 62%;
+                min-height: 380px;
+                text-align: center;
+                position: relative;
+                cursor: pointer;
+                margin: 0px 15px 10px 15px;                 
+            }
+}    
+
+@media (max-width: 800px) {
+     /* -- -- -- -- Seções -- -- -- -- */
+     #secao-1{
+        padding-bottom: 60px;
+        background-color: var(--secao1-bg-color);
+    }
+
+    #secao-2{
+        text-align: center;
+        background-color: var(--secao2-bg-color);
+        padding: 100px 0 100px 0;
+    }
+
+    #secao-3{
+        padding: 80px 0 0 0;
+    }
+
+            /* -- -- -- -- About Us -- -- -- -- */
+            #aboutus-2{ 
+                width: 750px;
+                text-align: center;
+            }
+
+                #sobrenos-box-texto{
+                            float: left;
+                            width: 450px;
+                            padding-left: 40px;
+                            text-align: left;
+                        }
+
+        /* -- -- -- -- Comentáriose -- -- -- -- */
+        #comentarios-title{
+            font-size: 42px;
+            font-family: 'Josefin Sans', sans-serif;
+            color: var(--title-color);
+            margin-bottom: 40px;
+        }
+
+        #comentarios{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            flex-flow: row wrap;
+        }
+
+            .main{
+                width: 62%;
+                min-height: 380px;
+                text-align: center;
+                position: relative;
+                cursor: pointer;
+                margin: 0px 15px 30px 15px;                 
+            }
+}
+
+
+
+@media (max-width: 430px) {
+    /* -- -- -- -- Seções -- -- -- -- */
+    #secao-1{
+        padding-bottom: 80px;
+        background-color: var(--secao1-bg-color);
+    }
+
+    #secao-2{
+        text-align: center;
+        background-color: var(--secao2-bg-color);
+        padding: 100px 0 100px 0;
+    }
+
+    #secao-3{
+        padding: 80px 0 0 0;
+    }
+    
+    /* -- -- -- -- About Us -- -- -- -- */
+            #aboutus-2{ 
+                width: 390px;
+                text-align: center;
+            }
+
+                #img-div{
+                    display: inline-block;
+                    float: none;
+                    width: 92%;
+                    height: auto;
+                    border-radius: 15px;
+                }
+                
+                #sobrenos-box-texto{
+                    float: none;
+                    width: 390px;
+                    padding: 0 20px 0 20px;
+                    text-align: center;
+                }
+
+                    #sobrenos-title{
+                        font-size: 38px;
+                        margin-bottom: 19px;
+                        color: var(--title-color);
+                        position: relative;
+                        margin-top: 55px;
+                    }
+
+                        #sobrenos-title:after{
+                            position: absolute;
+                            content: " ";
+                            width: 50%;
+                            height: 4px;
+                            background-color: var(--sobrenos-border-color);
+                            left: 50%;
+                            transform: translateX(-50%);
+                            bottom: -2px;
+                        }
+
+                    #sobrenos-texto{
+                        font-size: 18px;
+                        line-height: 28px;
+                        font-weight: normal;
+                        text-align: justify;
+                        color: var(--letter-color);
+                    }
+
+                    #box-btns{
+                        margin-top: 40px;
+                    }
+
+                        .btn:nth-child(2){
+                            margin-right: 0px;
+                        }
+
+                    /* -- -- Dark-Mode -- -- */
+                    #dark-mode-box{
+                        float: none;
+                        display: block;
+                        height: 100px;
+                        width: 100%;
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+
+                        #dark-mode-text{
+                            display: inline-block;
+                            margin-bottom: 6px;
+                            font-family: 'Seconda Round MediumItalic'; 
+                            font-size: 12px; 
+                            width: 62px;
+                            transform: translateX(-42%);
+                        }
+
+                            #dark-mode-checkbox{
+                                margin-left: 0px;
+                            }
+
+                                #label-dark-mode{
+                                    position: absolute;
+                                    width: 65px;
+                                    height: 30px;
+                                    background-color: #bbbcbf;
+                                    border-radius: 50px;
+                                    cursor: pointer;
+                                    transform: translateX(-60%);
+                                }
+
+                                    .slider {
+                                        position: absolute;
+                                        width: 67px;
+                                        height: 32px;
+                                        border-radius: 50px;
+                                        transition: 0.3s;
+                                        margin-left: -1px;
+                                        margin-top: -1px;
+                                        transform: translateX(-50%);
+                                    }
+
+                    #sobrenos-title{
+                        font-size: 38px;
+                        margin-bottom: 19px;
+                        color: var(--title-color);
+                        position: relative;
+                    }
+
+        /* -- -- -- -- Nosso Time -- -- -- -- */
+        #nossotime-title{
+            font-size: 42px;
+            font-family: 'Josefin Sans', sans-serif;
+            color: var(--title-color);
+            margin-bottom: 50px;
+        }
+
+            .team-member{
+                background-color: var(--team-member-square-color);
+                margin: 10px;
+                margin-bottom: 80px;
+                width: 350px;
+                padding: 20px;
+                line-height: 24px;
+                position: relative;
+                border-radius: 10px;
+            }
+
+        /* -- -- -- -- Comentáriose -- -- -- -- */
+        #comentarios-title{
+            font-size: 42px;
+            font-family: 'Josefin Sans', sans-serif;
+            color: var(--title-color);
+            margin-bottom: 70px;
+        }
+
+        #comentarios{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            flex-flow: row wrap;
+        }
+
+            .main{
+                width: 100%;
+                min-height: 380px;
+                text-align: center;
+                position: relative;
+                cursor: pointer;
+                margin: 0px 15px 80px 15px;                 
+            }
+}
+
+
+@media (max-width: 375px) {
+    /* -- -- -- -- About Us -- -- -- -- */
+            #aboutus-2{ 
+                width: 360px;
+                text-align: center;
+            }
+
+                #sobrenos-box-texto{
+                        float: none;
+                        width: 360px;
+                        padding: 0 20px 0 20px;
+                        text-align: center;
+                    }
+
+                    #slogan{
+                        font-size: 23px;
+                        font-weight: normal;
+                        margin-bottom: 12px;
+                        letter-spacing: 1px;
+                        color: var(--title-color);
+                    }
+}
