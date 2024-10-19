@@ -1,0 +1,180 @@
+:root{
+    --text-link-ref-underline-color: #0074D9;
+}
+
+.dark-mode:root{
+    --text-link-ref-underline-color: #3484c1;
+}
+
+#box-menu{
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+}
+
+    #box-menu-2{
+        display: flex;
+        height: var(--menu-height);
+        width: 100%;
+        background-color: #01282e;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        --menu-height: 56px;
+    }
+
+    #logotipo{
+        position: absolute;
+        top: 7px;
+        width: 58px;
+        left: 7px;
+    }
+
+        #box-menu-2 ul{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;    
+        }
+
+            #box-menu-2 ul li{
+                margin: 0 5px;
+                display: inline-block;
+                padding: 0px 12px;
+
+            }
+
+                #box-menu-2 ul li a{
+                    font-family: 'Seconda Round Light';
+                    color: #f2f2f2;
+                    font-size: 15px;
+                    letter-spacing: 0.5px;
+                    transition: all 0.3s ease;
+                    padding: 0 0 4px 0;
+                    text-decoration: none;
+                    background-image: linear-gradient(var(--text-link-ref-underline-color), var(--text-link-ref-underline-color));
+                    background-position: right bottom;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size .6s;
+                }
+
+                #box-menu-2 ul li a.active,
+                #box-menu-2 ul li a:hover{
+                    color: #56a3e2;
+                    background-position: left bottom;
+                    background-size: 100% 2px;
+                }
+
+    #box-logado-menu-compactado{
+        width: auto;
+    }
+
+        #box-logado{
+            width: 240px;
+            height: 38px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            float: left;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 18px;
+        }
+
+            #nome{
+                color: white;
+                font-family: 'Dosis Regular';
+                font-size: 18px;
+                margin-bottom: -3px;
+            }
+
+            #sair{
+                color: white;
+                font-family: 'Dosis Regular';
+                font-size: 12px;
+                transition: 0.4s;
+            }
+
+            #sair:hover{
+                color: #ed5050;
+            }
+
+            #convidado{
+                color: white;
+                font-family: 'Dosis Regular';
+                font-size: 18px;
+            }
+
+        #box-menu-2 .menu-btn i{
+            color: #fff;
+            cursor: pointer;
+            display: none;
+        }
+
+
+
+@media (max-width: 920px) {
+
+    #box-menu-2{
+        column-gap: 0px;
+        justify-content: right;
+    }
+
+    #box-menu-2 .menu-btn i{
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    #box-menu-2 ul{
+        position: fixed;
+        top: var(--menu-height);
+        left: -100%;
+        background-color: #003840;
+        height: calc(100vh - var(--menu-height));
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    #box-menu-2 ul.open{
+        left: 0;
+        z-index: 15;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #box-menu-2 ul li{
+        width: 100%;
+        padding: 0px 0px 20px 0px;
+    }
+
+    #box-menu-2 ul li a {
+        font-size: 23px;
+    }
+
+    #box-menu-2 ul li a.active,
+    #box-menu-2 ul li a:hover{
+        color: #56a3e2;
+        background-position: left bottom;
+        background-size: 100% 2px;
+    }
+
+    #box-logado-menu-compactado{
+        width: 320px;
+    }
+
+        #box-logado{
+            position: relative;
+            top: 18px;
+            right: 0px;
+        }
+
+}
