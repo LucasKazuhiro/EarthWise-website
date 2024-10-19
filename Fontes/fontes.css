@@ -1,0 +1,249 @@
+/* -- -- -- -- Fontes -- -- -- -- */
+
+/* -- -- Seconda Round -- -- */
+@font-face {
+    font-family: 'Seconda Round Light';
+    src: url('SecondaRound/SecondaRound-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+    @font-face {
+        font-family: 'Seconda Round LightItalic';
+        src: url('SecondaRound/SecondaRound-LightItalic.ttf') format('truetype');
+        font-weight: 300;
+        font-style: italic;
+        font-display: swap;
+    }
+
+
+@font-face {
+    font-family: 'Seconda Round Medium';
+    src: url('SecondaRound/SecondaRound-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+    @font-face {
+        font-family: 'Seconda Round MediumItalic';
+        src: url('SecondaRound/SecondaRound-MediumItalic.ttf') format('truetype');
+        font-weight: 500;
+        font-style: italic;
+        font-display: swap;
+    }
+    
+
+@font-face {
+    font-family: 'Seconda Round Bold';
+    src: url('SecondaRound/SecondaRound-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Seconda Round Italic';
+    src: url('SecondaRound/SecondaRound-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+/* -- -- Abel -- -- */
+@font-face {
+    font-family: 'Abel Regular';
+    src: url('Abel/Abel-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* -- -- Dosis -- -- */
+@font-face {
+    font-family: 'Dosis Bold';
+    src: url('Dosis/Dosis-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dosis Light';
+    src: url('Dosis/Dosis-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dosis Regular';
+    src: url('Dosis/Dosis-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* -- -- Lato -- -- */
+@font-face {
+    font-family: 'Lato Regular';
+    src: url('Lato/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    src: url('Lato/Lato-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato Bold';
+    src: url('Lato/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* -- -- Montserrat -- -- */
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('Montserrat/Montserrat-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('Montserrat/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* -- -- Open Sans -- -- */
+@font-face {
+    font-family: 'OpenSans Regular';
+    src: url('OpenSans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans Bold';
+    src: url('OpenSans/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* -- -- Roboto Condensed -- -- */
+@font-face {
+    font-family: 'RobotoCondensed Bold';
+    src: url('RobotoCondensed/RobotoCondensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* -- -- FF Mark -- -- */
+@font-face {
+    font-family: 'FFMark Bold';
+    src: url('FFMark/Mark-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FFMark Heavy';
+    src: url('FFMark/Mark-Heavy.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* -- -- Josefin Sans -- -- */
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('JosefinSans/JosefinSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('JosefinSans/JosefinSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('JosefinSans/JosefinSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* -- -- Poppins -- -- */
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
