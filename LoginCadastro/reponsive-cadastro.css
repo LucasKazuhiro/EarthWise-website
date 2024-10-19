@@ -1,0 +1,214 @@
+@media (max-width: 1280px){
+    /* -- -- -- -- Geral -- -- -- -- */
+    #geral{
+        background-image: url("img/folhas-background.jpg");
+        background-size: 140%;
+        background-repeat: no-repeat;
+    }
+
+    /* -- -- -- Rodapé -- -- -- */
+    #box-footer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        min-height: 230px;
+        background-color: transparent;
+        font-family: 'Seconda Round Light';
+    }
+}
+
+
+
+
+
+@media (max-width: 890px){
+    /* -- -- -- -- Geral -- -- -- -- */
+    #geral{
+        background-image: url("img/folhas-background.jpg");
+        background-size: 200%;
+        background-repeat: no-repeat;
+    }
+
+        #geral2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+        }
+
+    /* -- -- -- Rodapé -- -- -- */
+    #box-footer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        min-height: 0px;
+        background-color: transparent;
+        font-family: 'Seconda Round Light';
+    }
+}
+
+
+
+
+
+@media (max-width: 428px){
+    /* -- -- -- -- Geral -- -- -- -- */
+    #geral{
+        background-image: url("img/folhas-background.jpg");
+        background-size: 400%;
+        background-repeat: no-repeat;
+    }
+
+        /* -- -- -- -- Cadastro -- -- -- -- */
+        #cadastro{
+            width: 360px;
+            height: 450px;
+            text-align: center;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, rgba(57,189,161,1) 0%, rgba(105,181,231,1) 100%);
+
+            border-top-left-radius: var(--border-radius-cadastro);
+            border-top-right-radius: var(--border-radius-cadastro);
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: var(--border-radius-cadastro);
+
+            --border-radius-cadastro: 35px;
+        }
+
+    /* -- -- -- Rodapé -- -- -- */
+    #box-footer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        min-height: 230px;
+        background-color: transparent;
+        font-family: 'Seconda Round Light';
+    }
+}
+
+
+
+
+
+@media (max-width: 370px){
+    /* -- -- -- -- Geral -- -- -- -- */
+    #geral{
+        background-image: url("img/folhas-background.jpg");
+        background-size: 400%;
+        background-repeat: no-repeat;
+    }
+
+        /* -- -- -- -- Cadastro -- -- -- -- */
+        #cadastro{
+            width: 330px;
+            height: 450px;
+            text-align: center;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, rgba(57,189,161,1) 0%, rgba(105,181,231,1) 100%);
+
+            border-top-left-radius: var(--border-radius-cadastro);
+            border-top-right-radius: var(--border-radius-cadastro);
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: var(--border-radius-cadastro);
+
+            --border-radius-cadastro: 35px;
+        }
+
+            /* -- -- -- Cadastro Titulo -- -- -- */
+            #cadastro h1{
+                font-family: 'Poppins';
+                font-size: 28px;
+                margin-bottom: 30px;
+                color: #153b44;
+            }
+
+            /* -- -- -- Campos -- -- -- */
+            .input-field{
+                position: relative;
+                display: inline-block;
+                margin: 10px;
+                width: 300px;
+            }
+
+                #cadastro input{
+                    display: inline-block;
+                    width: 85%;
+                    height: 30px;
+                    border: none;
+                    outline: none;
+                    font-size: 15px;
+                    border-bottom: 1px solid #006972;
+                    background-color: transparent;
+                    padding-left: 34px;
+                    color: #33353f;
+                    font-family: 'Poppins';
+                    font-weight: normal;
+                }
+
+                    ::placeholder{
+                        font-family: 'Seconda Round Light';
+                        color: #4f4f4f;
+                    }
+
+                    #cadastro input:is(:focus, :valid){
+                        border-bottom: 1px solid #1d79c4;
+                    }
+
+
+                /* -- -- Icones dos Input's -- -- */
+                .cadastrar-icons{
+                    width: 20px;
+                    height: 18px;
+                    position: absolute;
+                    left: 9%;
+                    transform: translateY(-50%);
+                    filter: invert(18%) sepia(58%) saturate(4769%) hue-rotate(172deg) brightness(89%) contrast(102%);
+                }
+
+                    #username-icon{
+                        top: 44%;
+                    }
+
+                    #email-icon{
+                        top: 48%;
+                    }
+
+                    #senha-icon{
+                        top: 44%;
+                    }
+
+                    #cadastro input:is(:focus, :valid) ~ .cadastrar-icons{
+                        filter: invert(26%) sepia(78%) saturate(1933%) hue-rotate(205deg) brightness(91%) contrast(90%);
+                    }
+
+                    #cadastro input:is(:focus, :valid) ~ .esconder-mostrar-senha{
+                        filter: invert(18%) sepia(100%) saturate(2434%) hue-rotate(193deg) brightness(105%) contrast(83%);
+                    }
+
+                /* -- -- Icone do Olho (esconder ou mostrar senha) -- -- */
+                .esconder-mostrar-senha{
+                    width: 20px;
+                    height: 18px;
+                    position: absolute;
+                    top: 48%;
+                    right: 9%;
+                    transform: translateY(-52%);
+                    filter: invert(30%) sepia(17%) saturate(3998%) hue-rotate(149deg) brightness(107%) contrast(93%);
+                }
+
+    /* -- -- -- Rodapé -- -- -- */
+    #box-footer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        min-height: 230px;
+        background-color: transparent;
+        font-family: 'Seconda Round Light';
+    }
+}

@@ -1,0 +1,201 @@
+@import url("../Fontes/fontes.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    user-select: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* -- -- -- -- Geral -- -- -- -- */
+#geral{
+    background-image: url("img/folhas-background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#geral2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+    /* -- -- -- -- Cadastro -- -- -- -- */
+    #cadastro{
+        width: 400px;
+        height: 450px;
+        text-align: center;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(180deg, rgba(57,189,161,1) 0%, rgba(105,181,231,1) 100%);
+
+        border-top-left-radius: var(--border-radius-cadastro);
+        border-top-right-radius: var(--border-radius-cadastro);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: var(--border-radius-cadastro);
+
+        --border-radius-cadastro: 35px;
+    }
+
+        /* -- -- -- Cadastro Titulo -- -- -- */
+        #cadastro h1{
+            font-family: 'Poppins';
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #153b44;
+        }
+
+        /* -- -- -- Campos -- -- -- */
+        .input-field{
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+            width: 300px;
+        }
+
+            #cadastro input{
+                display: inline-block;
+                width: 100%;
+                height: 30px;
+                border: none;
+                outline: none;
+                font-size: 15px;
+                border-bottom: 1px solid #006972;
+                background-color: transparent;
+                padding-left: 34px;
+                color: #33353f;
+                font-family: 'Poppins';
+                font-weight: normal;
+            }
+
+                ::placeholder{
+                    font-family: 'Seconda Round Light';
+                    color: #4f4f4f;
+                }
+
+                #cadastro input:is(:focus, :valid){
+                    border-bottom: 1px solid #1d79c4;
+                }
+
+                input:-webkit-autofill,
+                input:-webkit-autofill:focus {
+                    transition: background-color 600000s 0s, color 600000s 0s;
+                    color: #33353f;
+                    font-family: 'Poppins';
+                }
+
+
+            /* -- -- Icones dos Input's -- -- */
+            .cadastrar-icons{
+                width: 20px;
+                height: 18px;
+                position: absolute;
+                left: 0;
+                transform: translateY(-50%);
+                filter: invert(18%) sepia(58%) saturate(4769%) hue-rotate(172deg) brightness(89%) contrast(102%);
+            }
+
+                #username-icon{
+                    top: 44%;
+                }
+
+                #email-icon{
+                    top: 48%;
+                }
+
+                #senha-icon{
+                    top: 44%;
+                }
+
+                #cadastro input:is(:focus, :valid) ~ .cadastrar-icons{
+                    filter: invert(26%) sepia(78%) saturate(1933%) hue-rotate(205deg) brightness(91%) contrast(90%);
+                }
+
+                #cadastro input:is(:focus, :valid) ~ .esconder-mostrar-senha{
+                    filter: invert(18%) sepia(100%) saturate(2434%) hue-rotate(193deg) brightness(105%) contrast(83%);
+                }
+
+            /* -- -- Icone do Olho (esconder ou mostrar senha) -- -- */
+            .esconder-mostrar-senha{
+                width: 20px;
+                height: 18px;
+                position: absolute;
+                top: 48%;
+                right: 10px;
+                transform: translateY(-52%);
+                filter: invert(30%) sepia(17%) saturate(3998%) hue-rotate(149deg) brightness(107%) contrast(93%);
+            }
+
+            #esconder-senha{
+                
+            }
+
+            #mostrar-senha{
+                display: none;
+            }
+
+        /* -- -- -- Link para logar -- -- -- */
+        #cadastro p{
+            text-align: left;
+            padding: 0 0 0 40px;
+            margin-top: 6px;
+            color: #2c3aa0;
+            font-family: 'Poppins';
+            font-size: 13px;
+            font-weight: normal;
+            text-decoration: none;
+        }
+
+            #cadastro p:hover{
+                text-decoration: underline;
+            }
+
+            #cadastro a{ 
+                text-decoration: none;
+            }
+
+        /* -- -- -- Box da Menssagem de efetuação após Cadastrar -- -- -- */
+        #mensagem-box{
+            width: 100%;
+            height: 25px;
+            margin-top: 20px;
+        }
+
+            .mensagem{ 
+                font-size: 15px;
+                color: #2c3aa0;
+                font-family: 'Poppins';
+            }
+
+        /* -- -- -- Botão Cadastrar -- -- -- */
+        #btnCadastrar{
+            width: 180px;
+            height: 46px;
+            border: none;
+            margin-top: 10px;
+            font-family: 'Poppins';
+            background-color: #3ca82b;
+            cursor: pointer;
+            color: white;
+            transition: all 0.3s ease;
+            border-top-left-radius: var(--border-radius-btnCadastrar);
+            border-top-right-radius: var(--border-radius-btnCadastrar);
+            border-bottom-left-radius: var(--border-radius-btnCadastrar);
+            border-bottom-right-radius: var(--border-radius-btnCadastrar);
+
+            --border-radius-btnCadastrar: 35px;
+        }
+
+            #btnCadastrar:hover{
+                background-color: #2a8e18;
+            }
