@@ -1,0 +1,23 @@
+services:
+  www:
+    build: .
+    volumes:
+      - "./:/var/www/html" # sync project dir with container web dir
+    ports:
+      - 80:80
+  db:
+    image: mysql:latest
+    environment:
+      - MYSQL_DATABASE=php_docker
+      - MYSQL_USER=php_docker
+      - MYSQL_PASSWORD=password   # just for test purposes
+      - MYSQL_ALLOW_EMPTY_PASSWORD=1   # true
+    volumes:
+      - "./db/:/docker-entrypoint-initdb.d"   # create tables automatically
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 8001:80
+    environment:
+      - PMA_HOST=db
+      - PMA_PORT=3306
