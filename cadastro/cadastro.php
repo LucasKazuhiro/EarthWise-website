@@ -8,13 +8,13 @@
         <link rel="stylesheet" href="cadastro.css">
         <title> Cadastre-se na EarthWise! </title>
 
-        <link rel="stylesheet" href="../MenuFooter/footer/footer.css">
-        <link rel="stylesheet" href="../MenuFooter/menu/menu.css">
-        <link rel="stylesheet" href="../LoginCadastro/reponsive-cadastro.css">
+        <link rel="stylesheet" href="../menu-footer/footer/footer.css">
+        <link rel="stylesheet" href="../menu-footer/menu/menu.css">
+        <link rel="stylesheet" href="reponsive-cadastro.css">
     </head>
     <body>
         <div id="geral">
-            <?php include '../MenuFooter/menu/menu.php';?>
+            <?php include '../menu-footer/menu/menu.php';?>
             <div id="geral2">
                 <div id="cadastro">
                     <form action="" method="post">
@@ -64,7 +64,7 @@
                         <div id="mensagem-box">
 
                         <?php
-                            include_once "../BancoDeDados/conexao.php";    
+                            include_once "../db/conexao.php";    
                             if(isset($_POST["usr_name"]) && isset($_POST["usr_email"]) && isset($_POST["usr_senha"])){
                                 $userName = $_POST["usr_name"];
                                 $userEmail = $_POST["usr_email"];
@@ -93,11 +93,11 @@
             </div>
 
             <div id="box-footer">
-                <?php include '../MenuFooter/footer/footer.html';?>
+                <?php include '../menu-footer/footer/footer.html';?>
             </div>
         </div>
 
         
     </body>
-    <script src="../MenuFooter/menu/menu.js"></script>
+    <script src="../menu-footer/menu/menu.js"></script>
 </html>
