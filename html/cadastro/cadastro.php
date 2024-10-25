@@ -59,30 +59,37 @@
                             </script>
                         </div>
 
-                        <a href="../Home/home.php"> <p> Já tem uma conta? </p> </a>
+                        <a href="/"> <p> Já tem uma conta? </p> </a>
 
                         <div id="mensagem-box">
 
                         <?php
                             include_once "../db-connection/conexao.php";    
                             if(isset($_POST["usr_name"]) && isset($_POST["usr_email"]) && isset($_POST["usr_senha"])){
-                                $userName = $_POST["usr_name"];
+                                $userNome = $_POST["usr_name"];
                                 $userEmail = $_POST["usr_email"];
                                 $userSenha = $_POST["usr_senha"];
-                                    
-                                $consulta = "insert into usuarios values ";
-                                $consulta .= "(NULL,'$userName','$userEmail','$userSenha');";
+                                $senha_hashed = password_hash($userSenha, PASSWORD_DEFAULT);
                                 
-                                // execução da consulta
-                                $resultado = mysqli_query($mysqli,$consulta);
-                                
-                                // verifica se a consulta foi efetivada ou não
-                                if ($resultado === FALSE) {
-                                    echo "<span class='mensagem'> Erro na inclusão do registro... <span>". mysqli_error($mysqli); 
-                                }else {
-                                    echo "<span class='mensagem'> Cadastro concluído com sucesso! </span>"; 
-                                    mysqli_close($mysqli);	
+                                $stmt = $mysqli->prepare("INSERT INTO usuarios (nome, email, senha) VALUES(?, ?, ?)");
+
+                                $stmt->bind_param("sss", $userNome, $userEmail, $senha_hashed);
+
+
+                                try{
+                                    if($stmt->execute()){
+                                        echo "<span class='mensagem'> Cadastro concluído com sucesso! </span>"; 
+                                        echo '<script type="text/javascript">';
+                                        echo 'window.location.href = "/";';
+                                        echo '</script>';
+                                    }
                                 }
+                                catch(mysqli_sql_exception $error){
+                                    $error = $mysqli->error;
+                                    echo "<span class='mensagem'> Erro na inclusão do registro. Por favor, tente novamente. $error </span>";
+                                }
+
+                                mysqli_close($mysqli);	
                             }
                         ?>
 
