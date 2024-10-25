@@ -14,16 +14,16 @@
             }
         </style>
 
-        <link rel="stylesheet" href="../../MenuFooter/footer/footer.css">
+        <link rel="stylesheet" href="../../menu-footer/footer/footer.css">
         <link rel="stylesheet" href="../responsive-conteudo/responsive-conteudo.css">
-        <link rel="stylesheet" href="../../MenuFooter/menu/menu.css">
+        <link rel="stylesheet" href="../../menu-footer/menu/menu.css">
     </head>
     <body>
 <!-- -- -- -- Geral -- -- -- -->
         <div id="geral">
             
     <!-- -- -- -- Menu -- -- -- -->
-            <?php include '../../MenuFooter/menu/menu.php';?>
+            <?php include '../../menu-footer/menu/menu.php';?>
             
     <!-- -- -- -- Scroll Line -- -- -- -->
             <div id="scroll-line">
@@ -354,7 +354,7 @@
                 <div id="box-editor">
                     <div id="box-editor-2">
                         <div id="box-perfil">
-                            <img src="../../SobreNos/img-sobrenos/LucasKazuhiro.jpg" alt="Foto de Perfil do Editor da Página" id="perfil-imagem">
+                            <img src="../../sobre-nos/img-sobrenos/LucasKazuhiro.jpg" alt="Foto de Perfil do Editor da Página" id="perfil-imagem">
                         </div>
                         <div id="box-info">
                             <p id="info1"> Escrito por: </p>
@@ -437,7 +437,7 @@
                 
         <!-- -- -- -- Rodapé -- -- -- -->
                 <div id="box-footer" style="background-color: var(--cor-box-noticias);">
-                    <?php include '../../MenuFooter/footer/footer.html';?>
+                    <?php include '../../menu-footer/footer/footer.html';?>
                 </div>
             </div>
 
@@ -449,5 +449,5 @@
         </div>
     </body>
     <script src="../js-conteudo/js-conteudo.js"></script>
-    <script src="../../MenuFooter/menu/menu.js"></script>
+    <script src="../../menu-footer/menu/menu.js"></script>
 </html>
