@@ -64,7 +64,7 @@
                         <div id="mensagem-box">
 
                         <?php
-                            include_once "../db/conexao.php";    
+                            include_once "../db-connection/conexao.php";    
                             if(isset($_POST["usr_name"]) && isset($_POST["usr_email"]) && isset($_POST["usr_senha"])){
                                 $userName = $_POST["usr_name"];
                                 $userEmail = $_POST["usr_email"];
