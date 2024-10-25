@@ -30,8 +30,8 @@ USE `php_docker`;
 CREATE TABLE IF NOT EXISTS `usuarios` (
   `id` int(4) NOT NULL AUTO_INCREMENT,
   `nome` varchar(140) NOT NULL,
-  `email` varchar(50) DEFAULT NULL,
-  `senha` varchar(50) DEFAULT NULL,
+  `email` varchar(70) NOT NULL UNIQUE,
+  `senha` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
