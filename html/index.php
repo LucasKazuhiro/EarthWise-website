@@ -1,5 +1,5 @@
 <?php 
-    session_start();
+    include 'menu-footer/menu/session_start.php';
 ?>
 
 <!DOCTYPE html>

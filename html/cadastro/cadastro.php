@@ -1,3 +1,7 @@
+<?php 
+    include '../menu-footer/menu/session_start.php';
+?>
+
 <!DOCTYPE html>
 <html lang="PT-BR">
     <head>
