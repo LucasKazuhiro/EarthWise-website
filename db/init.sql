@@ -19,8 +19,7 @@ SET time_zone = "+00:00";
 --
 -- Base de Dados: `login`
 --
-CREATE DATABASE IF NOT EXISTS `login` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `login`;
+USE `php_docker`;
 
 -- --------------------------------------------------------
 

@@ -1,8 +1,8 @@
 <?php
-    $usuario = 'root';
-    $senha = '';
-    $database = 'login';
-    $host = 'localhost';
+    $host = 'db';
+    $usuario = 'php_docker';
+    $senha = 'password';
+    $database = 'php_docker';
 
     $mysqli = new mysqli($host, $usuario, $senha, $database);
 
