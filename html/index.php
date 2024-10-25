@@ -81,33 +81,39 @@
                                         
 
                                         if(isset($_POST['email']) || isset($_POST['senha'])) {
-                                                
-
                                                 $email = $mysqli->real_escape_string($_POST['email']);
                                                 $senha = $mysqli->real_escape_string($_POST['senha']);
 
-                                                $sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
-                                                $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
+                                                $stmt = $mysqli->prepare("SELECT id, nome, email, senha FROM usuarios WHERE email = ?");
+                                                $stmt->bind_param("s", $email);
+                                                $stmt->execute();
+                                                $stmt->store_result();
 
-                                                $quantidade = $sql_query->num_rows;
-
-                                                if($quantidade == 1) {
+                                                if($stmt->num_rows > 0){
+                                                    $stmt->bind_result($userId, $userNome, $userEmail, $senha_hashed);
                                                     
-                                                    $usuario = $sql_query->fetch_assoc();
-    
-                                                    if(!isset($_SESSION)) {
-                                                        session_start();
+                                                    $stmt->fetch();
+
+                                                    if(password_verify($senha, $senha_hashed)){
+                                                        if(!isset($_SESSION)) {
+                                                            session_start();
+                                                        }
+
+                                                        $_SESSION['id'] = $userId;
+                                                        $_SESSION['nome'] = $userNome;
+                                                        $_SESSION['trava'] = '1';
+
+                                                        echo "<span class='mensagem'> Login efetuado com sucesso! </span>";
+                                                        echo '<script type="text/javascript">';
+                                                        echo 'window.location.href = "/";';
+                                                        echo '</script>';
                                                     }
-
-                                                    $_SESSION['id'] = $usuario['id'];
-                                                    $_SESSION['nome'] = $usuario['nome'];
-                                                    $_SESSION['trava'] = '1';
-
-
-                                                    echo "<span class='mensagem'> Por favor recarregue a página! </span>";
-                                                } else {
-                                                    echo "<span class='mensagem'> Falha ao logar! E-mail ou senha incorretos </span>";
-                                                    $_SESSION['trava'] = '0';
+                                                    else{
+                                                        echo "<span class='mensagem'> E-mail e/ou Senha incorretos! </span>";
+                                                    }
+                                                }
+                                                else {
+                                                    echo "<span class='mensagem'> E-mail e/ou senha incorretos! </span>";
                                                 }
                                         }
                                     ?>
