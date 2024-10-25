@@ -11,9 +11,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;700&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="../MenuFooter/footer/footer.css">
+        <link rel="stylesheet" href="../menu-footer/footer/footer.css">
         <link rel="stylesheet" href="responsive-sobrenos.css">
-        <link rel="stylesheet" href="../MenuFooter/menu/menu.css">
+        <link rel="stylesheet" href="../menu-footer/menu/menu.css">
 
         <title> Sobre Nós </title>
 
@@ -55,12 +55,12 @@
             <div id="container">
             <!-- -- -- -- Menu -- -- -- -->
                 <div id="secao-1">
-                    <?php include '../MenuFooter/menu/menu.php';?>
+                    <?php include '../menu-footer/menu/menu.php';?>
 
                     <div id="aboutus">
                         <div id="aboutus-2">
                             <div id="img-div">
-                                <img src="../MenuFooter/menu/Logotipo.png" alt="">
+                                <img src="../menu-footer/menu/Logotipo.png" alt="">
                             </div>
                             <div id="sobrenos-box-texto">
                                 <h1 id="sobrenos-title"> Sobre Nós </h1>
@@ -109,7 +109,7 @@
 
                             <div id="box-redes-sociais">
                                 <a href="#" target=”_blank”>
-                                    <img src="../../SiteTCC/PaginaDeConteudo/imagem/instagram-icon.png" alt="Instagram do Editor da Página" class="time-redes-sociais primeiro-item">
+                                    <img src="../conteudo-pags/imagem/instagram-icon.png" alt="Instagram do Editor da Página" class="time-redes-sociais primeiro-item">
                                 </a>
                             </div>
                         </div>
@@ -127,7 +127,7 @@
 
                             <div id="box-redes-sociais">
                                 <a href="https://www.instagram.com/tuahiro/" target=”_blank”>
-                                    <img src="../../SiteTCC/PaginaDeConteudo/imagem/instagram-icon.png" alt="Instagram do Editor da Página" class="time-redes-sociais primeiro-item">
+                                    <img src="../../conteudo-pags/imagem/instagram-icon.png" alt="Instagram do Editor da Página" class="time-redes-sociais primeiro-item">
                                 </a>
                             </div>
                         </div>
@@ -145,7 +145,7 @@
 
                             <div id="box-redes-sociais">
                                 <a href="https://instagram.com/fragas_gustavo?igshid=ZmRlMzRkMDU=" target=”_blank”>
-                                    <img src="../../SiteTCC/PaginaDeConteudo/imagem/instagram-icon.png" alt="Instagram do Editor da Página" class="time-redes-sociais primeiro-item">
+                                    <img src="../../conteudo-pags/imagem/instagram-icon.png" alt="Instagram do Editor da Página" class="time-redes-sociais primeiro-item">
                                 </a>
                             </div>
                         </div>
@@ -163,13 +163,13 @@
 
                             <div id="box-redes-sociais">
                                 <a href="https://www.instagram.com/tuahiro/" target=”_blank”>
-                                    <img src="../../SiteTCC/PaginaDeConteudo/imagem/instagram-icon.png" alt="Instagram do Editor da Página" class="time-redes-sociais primeiro-item">
+                                    <img src="../../conteudo-pags/imagem/instagram-icon.png" alt="Instagram do Editor da Página" class="time-redes-sociais primeiro-item">
                                 </a>
                                 <a href="https://myanimelist.net/profile/HiroshiLKO" target="_blank">
-                                    <img src="../../SiteTCC/PaginaDeConteudo/imagem/myanimelist-icon.png"" alt="MyAnimeList do Editor da Página" class="time-redes-sociais segundo-item">
+                                    <img src="../../conteudo-pags/imagem/myanimelist-icon.png"" alt="MyAnimeList do Editor da Página" class="time-redes-sociais segundo-item">
                                 </a>
                                 <a href="https://www.youtube.com/channel/UCtRREkTLWYNkZuxYDDKikaA" target="_blank">
-                                    <img src="../../SiteTCC/PaginaDeConteudo/imagem/youtube-icon.png" alt="Canal do Youtube do Editor da Página" class="time-redes-sociais terceiro-item">
+                                    <img src="../../conteudo-pags/imagem/youtube-icon.png" alt="Canal do Youtube do Editor da Página" class="time-redes-sociais terceiro-item">
                                 </a>
                             </div>
                             <a href="comentarios-simplylink.html"><img src="img-sobrenos/EasterEgg.jpg" alt="" width="0.5px" style="float: right;"></a>
@@ -189,7 +189,7 @@
 
                             <div id="box-redes-sociais">
                                 <a href="#" target=”_blank”>
-                                    <img src="../../SiteTCC/PaginaDeConteudo/imagem/instagram-icon.png" alt="Instagram do Editor da Página" class="time-redes-sociais primeiro-item">
+                                    <img src="../../conteudo-pags/imagem/instagram-icon.png" alt="Instagram do Editor da Página" class="time-redes-sociais primeiro-item">
                                 </a>
                             </div>
                         </div>
@@ -207,7 +207,7 @@
 
                             <div id="box-redes-sociais">
                                 <a href="https://www.instagram.com/tuahiro/#" target=”_blank”>
-                                    <img src="../../SiteTCC/PaginaDeConteudo/imagem/instagram-icon.png" alt="Instagram do Editor da Página" class="time-redes-sociais primeiro-item">
+                                    <img src="../../conteudo-pags/imagem/instagram-icon.png" alt="Instagram do Editor da Página" class="time-redes-sociais primeiro-item">
                                 </a>
                             </div>
                         </div>
@@ -281,12 +281,12 @@
 
             
             <div id="box-footer">
-                <?php include '../MenuFooter/footer/footer.html';?>
+                <?php include '../menu-footer/footer/footer.html';?>
             </div>
         </div>
     </body>
 
 
     <script src="js-sobrenos.js"></script>
-    <script src="../MenuFooter/menu/menu.js"></script>
+    <script src="../menu-footer/menu/menu.js"></script>
 </html>
