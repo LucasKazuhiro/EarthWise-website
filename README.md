@@ -6,10 +6,10 @@ Docker installed and runing.\
 See the [Docker website](https://www.docker.com/get-started/) for installation instructions.
 
 # Build
-Steps to run the project:\
+Steps to run the project:
 1. Clone this repo
 ```bash
-https://github.com/LucasKazuhiro/EarthWise-website.git
+git clone https://github.com/LucasKazuhiro/EarthWise-website.git
 cd EarthWise-website
 ````
 
