@@ -4,6 +4,7 @@
     }
 
     session_destroy();
+    $_SESSION['trava'] = '0';
 
-    header("Location: home.php");
+    header("Location: /");
 ?>
