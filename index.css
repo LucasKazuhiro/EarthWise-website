@@ -1,4 +1,4 @@
-@import url("../Fontes/fontes.css");
+@import url("fonts/fontes.css");
 
 body{
     overflow-x: hidden;
@@ -29,7 +29,7 @@ a{
         #box-login{
         width: 100vw;
         height: 100vh;
-        background-image: url("../LoginCadastro/img/folhas-background.jpg");
+        background-image: url("cadastro/img/folhas-background.jpg");
         background-size: 100%;
         background-repeat: no-repeat;
         display: flex;

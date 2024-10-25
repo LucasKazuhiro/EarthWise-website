@@ -12,13 +12,13 @@
         <link rel="stylesheet" href="index.css">
         <title> Home </title>
 
-        <link rel="stylesheet" href="MenuFooter/footer/footer.css">
-        <link rel="stylesheet" href="MenuFooter/menu/menu.css">
+        <link rel="stylesheet" href="menu-footer/footer/footer.css">
+        <link rel="stylesheet" href="menu-footer/menu/menu.css">
         <link rel="stylesheet" href="index-responsive.css">
     </head>
     <body>
         <div id="geral">
-            <?php include 'MenuFooter/menu/menu.php';?>
+            <?php include 'menu-footer/menu/menu.php';?>
 
             
 
@@ -41,15 +41,15 @@
 
                                 <div class="input-field">
                                     <input type="email" name="email" placeholder="Email" required maxlength="35">
-                                    <img src="LoginCadastro/img/email.png" alt="" class="cadastrar-icons" id="email-icon">
+                                    <img src="cadastro/img/email.png" alt="" class="cadastrar-icons" id="email-icon">
                                 </div>
 
                                 <div class="input-field">
                                     <input type="password" id="password" name="senha" placeholder="Senha" required maxlength="23">
-                                    <img src="LoginCadastro/img/senha.png" alt="" class="cadastrar-icons" id="senha-icon">
+                                    <img src="cadastro/img/senha.png" alt="" class="cadastrar-icons" id="senha-icon">
 
-                                    <img src="LoginCadastro/img/esconder-senha.png" alt="" id="esconder-senha" class="esconder-mostrar-senha" onclick="senhaMostrar()">
-                                    <img src="LoginCadastro/img/mostrar-senha.png" alt="" id="mostrar-senha" class="esconder-mostrar-senha" onclick="senhaMostrar()">
+                                    <img src="cadastro/img/esconder-senha.png" alt="" id="esconder-senha" class="esconder-mostrar-senha" onclick="senhaMostrar()">
+                                    <img src="cadastro/img/mostrar-senha.png" alt="" id="mostrar-senha" class="esconder-mostrar-senha" onclick="senhaMostrar()">
 
 
                                     <script>
@@ -73,7 +73,7 @@
                                     </script>
                                 </div>
 
-                                <a href="LoginCadastro/cadastro.php"> <p> Não possui um conta? </p> </a>
+                                <a href="cadastro/cadastro.php"> <p> Não possui um conta? </p> </a>
                                 
                                 <div id="mensagem-box">
                                     <?php
@@ -133,10 +133,10 @@
                         </div>
 
                         <div id="box-noticia-3-grid">
-                            <a href="PaginaDeConteudo/materia-LogisticaReversa/LogisticaReversa.php">
+                            <a href="conteudo-pags/materia-LogisticaReversa/LogisticaReversa.php">
                                 <div class="box-noticia-4">
                                     <div class="box-imagem-noticia">
-                                        <img src="PaginaDeConteudo/materia-noticias/noticias-logistica-reversa.png" alt="Logística Reversa, tudo sobre o assunto" class="imagem-noticia">
+                                        <img src="conteudo-pags/materia-noticias/noticias-logistica-reversa.png" alt="Logística Reversa, tudo sobre o assunto" class="imagem-noticia">
                                         <div class="imagem-noticia-sombra"> </div>
                                     </div>
                                     <p class="noticias-letra"> Logística Reversa, tudo sobre o assunto </p>
@@ -144,10 +144,10 @@
                                 </div>
                             </a>
 
-                            <a href="PaginaDeConteudo/materia-Reciclagem/Reciclagem.php">
+                            <a href="conteudo-pags/materia-Reciclagem/Reciclagem.php">
                                 <div class="box-noticia-4">
                                     <div class="box-imagem-noticia">
-                                        <img src="PaginaDeConteudo/materia-noticias/noticias-reciclagem.png" alt="A Importância da Reciclagem" class="imagem-noticia">
+                                        <img src="conteudo-pags/materia-noticias/noticias-reciclagem.png" alt="A Importância da Reciclagem" class="imagem-noticia">
                                         <div class="imagem-noticia-sombra"> </div>
                                     </div>
                                     <p class="noticias-letra"> A Importância da Reciclagem </p>
@@ -155,10 +155,10 @@
                                 </div>
                             </a>
 
-                            <a href="PaginaDeConteudo/materia-TiposDeLixo/TiposDeLixo.php">
+                            <a href="conteudo-pags/materia-TiposDeLixo/TiposDeLixo.php">
                                 <div class="box-noticia-4">
                                     <div class="box-imagem-noticia">
-                                        <img src="PaginaDeConteudo/materia-noticias/noticias-tipos-de-lixo.png" alt="Quais são os tipos de lixo?" class="imagem-noticia">
+                                        <img src="conteudo-pags/materia-noticias/noticias-tipos-de-lixo.png" alt="Quais são os tipos de lixo?" class="imagem-noticia">
                                         <div class="imagem-noticia-sombra"> </div>
                                     </div>
                                     <p class="noticias-letra"> Quais são os tipos de lixo? </p>
@@ -166,10 +166,10 @@
                                 </div>
                             </a>
 
-                            <a href="PaginaDeConteudo/materia-DescarteDeLixoEletronico/DescarteLixoEletronico.php">
+                            <a href="conteudo-pags/materia-DescarteDeLixoEletronico/DescarteLixoEletronico.php">
                                 <div class="box-noticia-4">
                                     <div class="box-imagem-noticia">
-                                        <img src="PaginaDeConteudo/materia-noticias/noticias-lixo-eletronico.png" alt="Capivaras são animais considerados em perigo de extinção" class="imagem-noticia">
+                                        <img src="conteudo-pags/materia-noticias/noticias-lixo-eletronico.png" alt="Capivaras são animais considerados em perigo de extinção" class="imagem-noticia">
                                         <div class="imagem-noticia-sombra"> </div>
                                     </div>
                                     <p class="noticias-letra"> Lixo Eletrônico e seus problemas para o meio ambiente </p>
@@ -177,10 +177,10 @@
                                 </div>
                             </a>
 
-                            <a href="PaginaDeConteudo/materia-CarroEletrico/CarroEletrico.php">
+                            <a href="conteudo-pags/materia-CarroEletrico/CarroEletrico.php">
                                 <div class="box-noticia-4">
                                     <div class="box-imagem-noticia">
-                                        <img src="PaginaDeConteudo/materia-noticias/noticias-carro-eletrico.png" alt="Capivaras são animais considerados em perigo de extinção" class="imagem-noticia">
+                                        <img src="conteudo-pags/materia-noticias/noticias-carro-eletrico.png" alt="Capivaras são animais considerados em perigo de extinção" class="imagem-noticia">
                                         <div class="imagem-noticia-sombra"> </div>
                                     </div>
                                     <p class="noticias-letra"> Carro Elétrico vale a Pena </p>
@@ -191,7 +191,7 @@
                             <a href="#">
                                 <div class="box-noticia-4">
                                     <div class="box-imagem-noticia">
-                                        <img src="PaginaDeConteudo/materia-noticias/noticias-aquecimento-global.PNG" alt="Os problemas gerados pelo Aquecimento Global" class="imagem-noticia">
+                                        <img src="conteudo-pags/materia-noticias/noticias-aquecimento-global.PNG" alt="Os problemas gerados pelo Aquecimento Global" class="imagem-noticia">
                                         <div class="imagem-noticia-sombra"> </div>
                                     </div>
                                     <p class="noticias-letra"> Os problemas gerados pelo Aquecimento Global </p>
@@ -209,8 +209,8 @@
         </div>
 
         <div id="box-footer">
-            <?php include 'MenuFooter/footer/footer.html';?>
+            <?php include 'menu-footer/footer/footer.html';?>
         </div>
     </body>
-    <script src="MenuFooter/menu/menu.js"></script>
+    <script src="menu-footer/menu/menu.js"></script>
 </html>
