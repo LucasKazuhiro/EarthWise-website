@@ -1,364 +1,368 @@
 @import url("fonts/fontes.css");
 
-body{
+body {
     overflow-x: hidden;
+    width: 100%;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-img{
+img {
     user-select: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 
-#geral{
+#geral {
+    width: 100vw;
 }
 
-    #geral2{
-        
-    }
+#geral2 {
+    width: 100vw;
+}
 
-        #box-login{
-        width: 100vw;
-        height: 100vh;
-        background-image: url("cadastro/img/folhas-background.jpg");
-        background-size: 100%;
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        }
+#box-login {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("cadastro/img/folhas-background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        #reponsive-box-login{
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-        }
+#reponsive-box-login {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
 
-            #box-texto-empresa{
-                display: inline-block;
-                background: linear-gradient(180deg, rgba(57,189,161,1) 0%, rgba(105,181,231,1) 100%);
-                width: 480px;
-                height: auto;
-                margin-top: 90px;
-                margin-right: 105px;
-                border-radius: 18px;
-                padding: 22px 40px 40px 40px;
-            }
+#box-texto-empresa {
+    display: inline-block;
+    background: linear-gradient(180deg, rgba(57, 189, 161, 1) 0%, rgba(105, 181, 231, 1) 100%);
+    width: 480px;
+    height: auto;
+    margin-top: 90px;
+    margin-right: 105px;
+    border-radius: 18px;
+    padding: 22px 40px 40px 40px;
+}
 
-                #box-texto-empresa h1{
-                    color: #153b44;
-                    font-family: 'Poppins';
-                    font-weight: bold;
-                    font-size: 28px;
-                    text-align: center;
-                    margin-bottom: 20px;
-                }
+#box-texto-empresa h1 {
+    color: #153b44;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-                #box-texto-empresa p{
-                    color: #33353f;
-                    font-family: 'Poppins';
-                    font-weight: normal;
-                    font-size: 14px;
-                    text-align: justify;
-                    line-height: 26px;
-                }
+#box-texto-empresa p {
+    color: #33353f;
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 26px;
+}
 
-            #box-login-2{
-                background: linear-gradient(180deg, rgba(57,189,161,1) 0%, rgba(105,181,231,1) 100%);
-                width: 400px;
-                height: 340px;
-                margin-top: 90px;
-                text-align: center;
-                padding: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+#box-login-2 {
+    background: linear-gradient(180deg, rgba(57, 189, 161, 1) 0%, rgba(105, 181, 231, 1) 100%);
+    width: 400px;
+    height: 340px;
+    margin-top: 90px;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-                border-top-left-radius: var(--border-radius-cadastro);
-                border-top-right-radius: var(--border-radius-cadastro);
-                border-bottom-left-radius: 8px;
-                border-bottom-right-radius: var(--border-radius-cadastro);
+    border-top-left-radius: var(--border-radius-cadastro);
+    border-top-right-radius: var(--border-radius-cadastro);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: var(--border-radius-cadastro);
 
-                --border-radius-cadastro: 35px;
-            }
-
-                
-
-                /* -- -- -- Login Titulo -- -- -- */
-                #box-login-2 h1{
-                    font-family: 'Poppins';
-                    font-size: 28px;
-                    margin-bottom: 8px;
-                    color: #153b44;
-                }
-
-                /* -- -- -- Campos -- -- -- */
-                .input-field{
-                    position: relative;
-                    display: inline-block;
-                    margin: 10px;
-                    width: 300px;
-                }
-
-                    #box-login-2 input{
-                        display: inline-block;
-                        width: 100%;
-                        height: 30px;
-                        border: none;
-                        outline: none;
-                        font-size: 15px;
-                        border-bottom: 1px solid #006972;
-                        background-color: transparent;
-                        padding-left: 34px;
-                        color: #33353f;
-                        font-family: 'Poppins';
-                        font-weight: normal;
-                    }
-            
-                        ::placeholder{
-                            font-family: 'Seconda Round Light';
-                            color: #4f4f4f;
-                        }
-            
-                        #box-login-2 input:is(:focus, :valid){
-                            border-bottom: 1px solid #1d79c4;
-                        }
-
-                        input:-webkit-autofill,
-                        input:-webkit-autofill:focus {
-                            transition: background-color 600000s 0s, color 600000s 0s;
-                            color: #33353f;
-                            font-family: 'Poppins';
-                        }
-                    /* -- -- Icones dos Input's -- -- */
-                    .cadastrar-icons{
-                        width: 20px;
-                        height: 18px;
-                        position: absolute;
-                        left: 0;
-                        transform: translateY(-50%);
-                        filter: invert(18%) sepia(58%) saturate(4769%) hue-rotate(172deg) brightness(89%) contrast(102%);
-                    }
-
-                        #email-icon{
-                            top: 48%;
-                        }
-
-                        #senha-icon{
-                            top: 44%;
-                        }
-
-                        #box-login-2 input:is(:focus, :valid) ~ .cadastrar-icons{
-                            filter: invert(26%) sepia(78%) saturate(1933%) hue-rotate(205deg) brightness(91%) contrast(90%);
-                        }
-
-                        #box-login-2 input:is(:focus, :valid) ~ .esconder-mostrar-senha{
-                            filter: invert(18%) sepia(100%) saturate(2434%) hue-rotate(193deg) brightness(105%) contrast(83%);
-                        }
-
-                    /* -- -- Icone do Olho (esconder ou mostrar senha) -- -- */
-                    .esconder-mostrar-senha{
-                        width: 20px;
-                        height: 18px;
-                        position: absolute;
-                        top: 48%;
-                        right: 10px;
-                        transform: translateY(-52%);
-                        filter: invert(30%) sepia(17%) saturate(3998%) hue-rotate(149deg) brightness(107%) contrast(93%);
-                    }
-
-                    #esconder-senha{
-                        
-                    }
-
-                    #mostrar-senha{
-                        display: none;
-                    }
-                
-                /* -- -- -- Link para logar -- -- -- */
-                #box-login-2 p{
-                    text-align: left;
-                    padding: 0 0 0 40px;
-                    margin-top: 6px;
-                    color: #2c3aa0;
-                    font-family: 'Poppins';
-                    font-size: 13px;
-                    font-weight: normal;
-                    text-decoration: none;
-                }
-
-                    #box-login-2 p:hover{
-                        text-decoration: underline;
-                    }
-
-                    #box-login-2 a{ 
-                        text-decoration: none;
-                    }
+    --border-radius-cadastro: 35px;
+}
 
 
-                /* -- -- -- Menssagem de erro ao Logar -- -- -- */
-                #mensagem-box{
-                    width: 100%;
-                    height: 25px;
-                    margin-top: 20px;
-                }
 
-                    .mensagem{ 
-                        font-size: 15px;
-                        color: #2c3aa0;
-                        font-family: 'Poppins';
-                    }
+/* -- -- -- Login Titulo -- -- -- */
+#box-login-2 h1 {
+    font-family: 'Poppins';
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #153b44;
+}
 
-                /* -- -- -- Botão Cadastrar -- -- -- */
-                #btnLogin{
-                    width: 180px;
-                    height: 46px;
-                    border: none;
-                    margin-top: 12px;
-                    font-family: 'Poppins';
-                    background-color: #3ca82b;
-                    cursor: pointer;
-                    color: white;
-                    transition: all 0.3s ease;
-                    border-top-left-radius: var(--border-radius-btnCadastrar);
-                    border-top-right-radius: var(--border-radius-btnCadastrar);
-                    border-bottom-left-radius: var(--border-radius-btnCadastrar);
-                    border-bottom-right-radius: var(--border-radius-btnCadastrar);
+/* -- -- -- Campos -- -- -- */
+.input-field {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    width: 300px;
+}
 
-                    --border-radius-btnCadastrar: 35px;
-                }
+#box-login-2 input {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-bottom: 1px solid #006972;
+    background-color: transparent;
+    padding-left: 34px;
+    color: #33353f;
+    font-family: 'Poppins';
+    font-weight: normal;
+}
 
-                    #btnLogin:hover{
-                        background-color: #2a8e18;
-        }
+::placeholder {
+    font-family: 'Seconda Round Light';
+    color: #4f4f4f;
+}
 
-        /* -- -- -- Noticias -- -- -- */
-        #box-noticia{
-            height: auto;
-            background-color: var(--cor-box-noticias);
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            padding: 140px 0 80px 0;
+#box-login-2 input:is(:focus, :valid) {
+    border-bottom: 1px solid #1d79c4;
+}
 
-            --noticias-height: 210px;
-            --noticias-width: 310px;
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+    color: #33353f;
+    font-family: 'Poppins';
+}
 
-            /* Tamanho Padrão das Imagens
+/* -- -- Icones dos Input's -- -- */
+.cadastrar-icons {
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-50%);
+    filter: invert(18%) sepia(58%) saturate(4769%) hue-rotate(172deg) brightness(89%) contrast(102%);
+}
+
+#email-icon {
+    top: 48%;
+}
+
+#senha-icon {
+    top: 44%;
+}
+
+#box-login-2 input:is(:focus, :valid)~.cadastrar-icons {
+    filter: invert(26%) sepia(78%) saturate(1933%) hue-rotate(205deg) brightness(91%) contrast(90%);
+}
+
+#box-login-2 input:is(:focus, :valid)~.esconder-mostrar-senha {
+    filter: invert(18%) sepia(100%) saturate(2434%) hue-rotate(193deg) brightness(105%) contrast(83%);
+}
+
+/* -- -- Icone do Olho (esconder ou mostrar senha) -- -- */
+.esconder-mostrar-senha {
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    top: 48%;
+    right: 10px;
+    transform: translateY(-52%);
+    filter: invert(30%) sepia(17%) saturate(3998%) hue-rotate(149deg) brightness(107%) contrast(93%);
+}
+
+#esconder-senha {}
+
+#mostrar-senha {
+    display: none;
+}
+
+/* -- -- -- Link para logar -- -- -- */
+#box-login-2 p {
+    text-align: left;
+    padding: 0 0 0 40px;
+    margin-top: 6px;
+    color: #2c3aa0;
+    font-family: 'Poppins';
+    font-size: 13px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#box-login-2 p:hover {
+    text-decoration: underline;
+}
+
+#box-login-2 a {
+    text-decoration: none;
+}
+
+
+/* -- -- -- Menssagem de erro ao Logar -- -- -- */
+#mensagem-box {
+    width: 100%;
+    height: 25px;
+    margin-top: 20px;
+}
+
+.mensagem {
+    font-size: 15px;
+    color: #2c3aa0;
+    font-family: 'Poppins';
+}
+
+/* -- -- -- Botão Cadastrar -- -- -- */
+#btnLogin {
+    width: 180px;
+    height: 46px;
+    border: none;
+    margin-top: 12px;
+    font-family: 'Poppins';
+    background-color: #3ca82b;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+    border-top-left-radius: var(--border-radius-btnCadastrar);
+    border-top-right-radius: var(--border-radius-btnCadastrar);
+    border-bottom-left-radius: var(--border-radius-btnCadastrar);
+    border-bottom-right-radius: var(--border-radius-btnCadastrar);
+
+    --border-radius-btnCadastrar: 35px;
+}
+
+#btnLogin:hover {
+    background-color: #2a8e18;
+}
+
+/* -- -- -- Noticias -- -- -- */
+#box-noticia {
+    height: auto;
+    background-color: var(--cor-box-noticias);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 140px 0 80px 0;
+
+    --noticias-height: 210px;
+    --noticias-width: 310px;
+
+    /* Tamanho Padrão das Imagens
             Height: 340px 
             Width: 490px
             */
-        }
+}
 
-        .noticias-letra{
-            font-size: 16px;
-            line-height: 28px;
-            margin-top: 15.36px;
-            font-family: 'Montserrat Bold';
-            color: #383838;
-        }
+.noticias-letra {
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 15.36px;
+    font-family: 'Montserrat Bold';
+    color: #383838;
+}
 
-            #box-noticia-2{
-                width: 1050px;
-                display: inline-block;
-                text-align: left;
-            }
+#box-noticia-2 {
+    width: 1050px;
+    display: inline-block;
+    text-align: left;
+}
 
-                #box-noticia-titulo{
-                    font-family: 'RobotoCondensed Bold';
-                    font-size: 25px;
-                    margin-bottom: 30.72px;
-                    margin-left: 28px;
-                    text-align: left;
-                    color: var(--noticia-titulo);
-                    width: 100%;
-                }
+#box-noticia-titulo {
+    font-family: 'RobotoCondensed Bold';
+    font-size: 25px;
+    margin-bottom: 30.72px;
+    margin-left: 28px;
+    text-align: left;
+    color: var(--noticia-titulo);
+    width: 100%;
+}
 
-                #box-noticia-3-grid{
-                    display: grid;
-                    place-items: top;
-                    grid-template-columns: 30% 30% 30%;
-                    grid-column-gap: 30px;
-                    grid-row-gap: 85px;
-                }
+#box-noticia-3-grid {
+    display: grid;
+    place-items: top;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 30px;
+    grid-row-gap: 85px;
+}
 
-                    .box-noticia-4{
-                        width: var(--noticias-width);;
-                        text-align: left;
-                        margin-left: 28px;
-                    }
+.box-noticia-4 {
+    width: var(--noticias-width);
+    ;
+    text-align: left;
+    margin-left: 28px;
+}
 
-                    .imagem-noticia{
-                        transition: 0.50s;
-                    }
+.imagem-noticia {
+    transition: 0.50s;
+}
 
-                    .imagem-noticia-sombra{
-                        transition: 0.50s;
-                    }
+.imagem-noticia-sombra {
+    transition: 0.50s;
+}
 
-                    .box-noticia-4:hover .imagem-noticia{
-                        transform: scale(1.15);
-                        
-                    }
+.box-noticia-4:hover .imagem-noticia {
+    transform: scale(1.15);
 
-                    .box-noticia-4:hover .imagem-noticia-sombra{
-                        opacity: 0;
-                        transform: scale(1.15);
-                    }
+}
 
-                    .box-noticia-4:hover .noticias-letra{
-                        color: #248232;
-                    }
-                        
+.box-noticia-4:hover .imagem-noticia-sombra {
+    opacity: 0;
+    transform: scale(1.15);
+}
 
-                        .box-imagem-noticia{
-                            width: var(--noticias-width);;
-                            position: relative;
-                            overflow: hidden;
-                            border-radius: 18px;
-                            height: var(--noticias-height);
-                        }
-                        
-                            .imagem-noticia{
-                                width: var(--noticias-width);
-                                height: var(--noticias-height); 
-                                border-radius: 18px;
-                                display: block;
-                            }
-
-                            .imagem-noticia-sombra{
-                                position: absolute;
-                                width: var(--noticias-width);
-                                height: var(--noticias-height); 
-                                top: 0;
-                                bottom: 0;
-                                left: 0;
-                                right: 0;
-                                opacity: 0;
-                                background-color: #03470d;
-                            }
+.box-noticia-4:hover .noticias-letra {
+    color: #248232;
+}
 
 
-                        .ler-agora{
-                            margin-top: 10px;
-                            font-size: 14px;
-                            color: #383838;
-                            font-family: Arial, Helvetica, sans-serif;
-                        }
-                            .seta-ler-artigo{
-                                width: 4.781px;
-                                margin-left: 5.463px;
-                            }
+.box-imagem-noticia {
+    width: var(--noticias-width);
+    ;
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    height: var(--noticias-height);
+}
+
+.imagem-noticia {
+    width: var(--noticias-width);
+    height: var(--noticias-height);
+    border-radius: 18px;
+    display: block;
+}
+
+.imagem-noticia-sombra {
+    position: absolute;
+    width: var(--noticias-width);
+    height: var(--noticias-height);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: #03470d;
+}
+
+
+.ler-agora {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #383838;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.seta-ler-artigo {
+    width: 4.781px;
+    margin-left: 5.463px;
+}

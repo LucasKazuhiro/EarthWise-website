@@ -1,133 +1,69 @@
-@media (max-width: 884px){
-    /* -- -- -- Login -- -- -- */
-    #box-login{
+@media (max-width: 884px) {
+
+    #geral{
         width: 100vw;
-        height: 100vh;
-        background-image: url("../LoginCadastro/img/folhas-background.jpg");
-        background-size: 250%;
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
+    }
+
+    #geral2{
+        width: 100vw;
+    }
+
+    /* -- -- -- Login -- -- -- */
+    #box-login {
+        width: 100%;
+        background-size: 100%;
         justify-content: center;
         position: relative;
         margin-bottom: 150px;
-        }
+    }
 
-        #reponsive-box-login{
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            width: 600px;
-            height: auto;
-            flex-wrap: wrap;
-        }
+    #reponsive-box-login {
+        width: 600px;
+        height: auto;
+        flex-wrap: wrap;
+    }
 
-            #box-texto-empresa{
-                display: inline-block;
-                background: linear-gradient(180deg, rgba(57,189,161,1) 0%, rgba(105,181,231,1) 100%);
-                width: 600px;
-                height: auto;
-                margin-top: 0px;
-                margin-right: 0px;
-                border-radius: 18px;
-                padding: 22px 40px 40px 40px;
-            }
+    #box-texto-empresa {
+        width: 600px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
 
-            #box-login-2{
-                background: linear-gradient(180deg, rgba(57,189,161,1) 0%, rgba(105,181,231,1) 100%);
-                width: 400px;
-                height: 340px;
-                margin-top: 60px;
-                text-align: center;
-                padding: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                border-top-left-radius: var(--border-radius-cadastro);
-                border-top-right-radius: var(--border-radius-cadastro);
-                border-bottom-left-radius: 8px;
-                border-bottom-right-radius: var(--border-radius-cadastro);
-
-                --border-radius-cadastro: 35px;
-        }
+    #box-login-2 {
+        margin-top: 60px;
+    }
 
     /* -- -- -- Noticias -- -- -- */
-    #box-noticia{
+    #box-noticia {
         height: 100%;
         width: 100%;
-        background-color: var(--cor-box-noticias);
-        text-align: center;
-        align-items: center;
-        justify-content: center;
         padding-top: 25px;
 
         --noticias-height: 220px;
         --noticias-width: 330px;
     }
 
-        #box-noticia-2{
-            width: 800px;
-            display: inline-block;
-            text-align: left;
-            padding: 20px 20px 20px 0px;
-        }
+    #box-noticia-2 {
+        width: 800px;
+        padding: 20px 20px 20px 0px;
+    }
 
-            #box-noticia-titulo{
-                font-family: 'RobotoCondensed Bold';
-                font-size: 25px;
-                margin-bottom: 30.72px;
-                margin-left: 58px;
-                text-align: left;
-                color: var(--noticia-titulo);
-                width: 100%;
-            }
+    #box-noticia-titulo {
+        margin-left: 58px;
+    }
 
-            #box-noticia-3-grid{
-                display: grid;
-                grid-template-columns: 45% 45%;
-                grid-column-gap: 0px;
-                grid-row-gap: 50px;
-            }
+    #box-noticia-3-grid {
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 0px;
+        grid-row-gap: 50px;
+    }
 
-                .box-noticia-4{
-                    width: var(--noticias-width);
-                    text-align: left;
-                    margin-left: 54px;
-                }
-
-                    .box-imagem-noticia{
-                        width: var(--noticias-width);;
-                        position: relative;
-                        overflow: hidden;
-                        border-radius: 18px;
-                        height: var(--noticias-height);
-                    }
-                    
-                        .imagem-noticia{
-                            width: var(--noticias-width);
-                            height: var(--noticias-height); 
-                            border-radius: 18px;
-                            display: block;
-                        }
-
-                        .imagem-noticia-sombra{
-                            position: absolute;
-                            width: var(--noticias-width);
-                            height: var(--noticias-height); 
-                            top: 0;
-                            bottom: 0;
-                            left: 0;
-                            right: 0;
-                            opacity: 0;
-                            background-color: #03470d;
-                        }
-
+    .box-noticia-4 {
+        margin-left: 54px;
+    }
 
     /* -- -- -- Rodapé -- -- -- */
-    #box-footer{
+    #box-footer {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
@@ -142,145 +78,59 @@
 
 
 
-@media (max-width: 428px){
+@media (max-width: 450px) {
+
     /* -- -- -- Login -- -- -- */
-    #box-login{
-        width: 100vw;
+    #box-login {
         height: 1250px;
-        background-image: url("../LoginCadastro/img/folhas-background.jpg");
         background-size: 500%;
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
         margin-bottom: 120px;
-        }
+    }
 
-        #reponsive-box-login{
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            width: 100vw;
-            height: auto;
-            flex-wrap: wrap;
-            margin-top: 100px;
-        }
+    #reponsive-box-login {
+        width: 100vw;
+        margin-top: 100px;
+    }
 
-            #box-texto-empresa{
-                display: inline-block;
-                background: linear-gradient(180deg, rgba(57,189,161,1) 0%, rgba(105,181,231,1) 100%);
-                width: 360px;
-                height: auto;
-                margin-top: 0px;
-                margin-right: 0px;
-                border-radius: 18px;
-                padding: 22px 40px 40px 40px;
-            }
+    #box-texto-empresa {
+        width: 360px;
+    }
 
-            #box-login-2{
-                background: linear-gradient(180deg, rgba(57,189,161,1) 0%, rgba(105,181,231,1) 100%);
-                width: 370px;
-                height: 340px;
-                margin-top: 60px;
-                text-align: center;
-                padding: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                border-top-left-radius: var(--border-radius-cadastro);
-                border-top-right-radius: var(--border-radius-cadastro);
-                border-bottom-left-radius: 8px;
-                border-bottom-right-radius: var(--border-radius-cadastro);
-
-                --border-radius-cadastro: 35px;
-        }
+    #box-login-2 {
+        width: 370px;
+    }
 
 
     /* -- -- -- Noticias -- -- -- */
-    .noticias-letra{
+    .noticias-letra {
         font-size: 16px;
         line-height: 30px;
         margin-top: 15.36px;
     }
 
-    #box-noticia{
-        height: 100%;
-        width: 100%;
+    #box-noticia-2 {
+        width: 380px;
         text-align: center;
-        align-items: center;
-        justify-content: center;
-        padding-top: 25px;
-
-        --noticias-height: 220px;
-        --noticias-width: 330px;
+        padding: 0px;
     }
 
-        #box-noticia-2{
-            width: 380px;
-            display: inline-block;
-            text-align: center;
-            padding: 0px;
-        }
+    #box-noticia-titulo {
+        font-size: 20px;
+    }
 
-            #box-noticia-titulo{
-                font-family: 'RobotoCondensed Bold';
-                font-size: 20px;
-                margin-bottom: 30.72px;
-                width: 100%;
-            }
+    #box-noticia-3-grid {
+        place-items: center;
+        grid-template-columns: 100%;
+        grid-row-gap: 45px;
+    }
 
-            #box-noticia-3-grid{
-                display: grid;
-                place-items: center;
-                grid-template-columns: 100%;
-                grid-column-gap: 0px;
-                grid-row-gap: 45px;
-            }
+    .box-noticia-4 {
+        margin-left: 0px;
+    }
 
-                .box-noticia-4{
-                    width: var(--noticias-width);
-                    text-align: left;
-                    margin-left: 0px;
-                }
-
-                    .box-imagem-noticia{
-                        width: var(--noticias-width);;
-                        position: relative;
-                        overflow: hidden;
-                        border-radius: 18px;
-                        height: var(--noticias-height);
-                    }
-                    
-                        .imagem-noticia{
-                            width: var(--noticias-width);
-                            height: var(--noticias-height); 
-                            border-radius: 18px;
-                            display: block;
-                        }
-
-                        .imagem-noticia-sombra{
-                            position: absolute;
-                            width: var(--noticias-width);
-                            height: var(--noticias-height); 
-                            top: 0;
-                            bottom: 0;
-                            left: 0;
-                            right: 0;
-                            opacity: 0;
-                        }
-    
     /* -- -- -- Rodapé -- -- -- */
-    #box-footer{
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
+    #box-footer {
         min-height: 370px;
-        background-color: transparent;
-        font-family: 'Seconda Round Light';
     }
 }
 
@@ -288,309 +138,165 @@
 
 
 
-@media (max-width: 375px){
+@media (max-width: 375px) {
+
     /* -- -- -- Login -- -- -- */
-    #box-login{
-        width: 100vw;
-        height: 1200px;
-        background-image: url("../LoginCadastro/img/folhas-background.jpg");
-        background-size: 500%;
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        margin-bottom: 120px;
-        }
+    #reponsive-box-login {
+        margin-top: 0px;
+    }
 
-        #reponsive-box-login{
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            width: 100vw;
-            height: auto;
-            flex-wrap: wrap;
-            margin-top: 0px;
-        }
+    #box-texto-empresa {
+        width: 345px;
+    }
 
-            #box-texto-empresa{
-                display: inline-block;
-                background: linear-gradient(180deg, rgba(57,189,161,1) 0%, rgba(105,181,231,1) 100%);
-                width: 345px;
-                height: auto;
-                margin-top: 0px;
-                margin-right: 0px;
-                border-radius: 18px;
-                padding: 22px 40px 40px 40px;
-            }
-
-            #box-login-2{
-                background: linear-gradient(180deg, rgba(57,189,161,1) 0%, rgba(105,181,231,1) 100%);
-                width: 345px;
-                height: 340px;
-                margin-top: 60px;
-                text-align: center;
-                padding: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                border-top-left-radius: var(--border-radius-cadastro);
-                border-top-right-radius: var(--border-radius-cadastro);
-                border-bottom-left-radius: 8px;
-                border-bottom-right-radius: var(--border-radius-cadastro);
-
-                --border-radius-cadastro: 35px;
-        }
+    #box-login-2 {
+        width: 345px;
+    }
 }
 
 
 
 
 
-@media (max-width: 340px){
+@media (max-width: 340px) {
+
     /* -- -- -- Login -- -- -- */
-    #box-login{
-        width: 100vw;
+    #box-login {
         height: 1350px;
-        background-image: url("../LoginCadastro/img/folhas-background.jpg");
         background-size: 700%;
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    }
+
+    #box-texto-empresa {
+        width: 305px;
+    }
+
+    #box-texto-empresa h1 {
+        color: #153b44;
+        font-family: 'Poppins';
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #box-texto-empresa p {
+        color: #33353f;
+        font-family: 'Poppins';
+        font-weight: normal;
+        font-size: 14px;
+        text-align: justify;
+        line-height: 26px;
+    }
+
+    #box-login-2 {
+        width: 305px;
+    }
+
+
+    /* -- -- -- Login Titulo -- -- -- */
+    #box-login-2 h1 {
+        font-family: 'Poppins';
+        font-size: 26px;
+        margin-bottom: 8px;
+        color: #153b44;
+    }
+
+    /* -- -- -- Campos -- -- -- */
+    .input-field {
         position: relative;
-        margin-bottom: 120px;
-        }
+        display: inline-block;
+        margin: 10px;
+        width: 300px;
+    }
 
-        #reponsive-box-login{
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            width: 100vw;
-            height: auto;
-            flex-wrap: wrap;
-            margin-top: 100px;
-        }
+    #box-login-2 input {
+        display: inline-block;
+        width: 80%;
+        height: 30px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        border-bottom: 1px solid #006972;
+        background-color: transparent;
+        padding-left: 34px;
+        color: #33353f;
+        font-family: 'Poppins';
+        font-weight: normal;
+    }
 
-            #box-texto-empresa{
-                display: inline-block;
-                background: linear-gradient(180deg, rgba(57,189,161,1) 0%, rgba(105,181,231,1) 100%);
-                width: 305px;
-                height: auto;
-                margin-top: 0px;
-                margin-right: 0px;
-                border-radius: 18px;
-                padding: 22px 40px 40px 40px;
-            }
+    ::placeholder {
+        font-family: 'Seconda Round Light';
+        color: #4f4f4f;
+    }
 
-                #box-texto-empresa h1{
-                    color: #153b44;
-                    font-family: 'Poppins';
-                    font-weight: bold;
-                    font-size: 25px;
-                    text-align: center;
-                    margin-bottom: 20px;
-                }
+    #box-login-2 input:is(:focus, :valid) {
+        border-bottom: 1px solid #1d79c4;
+    }
 
-                #box-texto-empresa p{
-                    color: #33353f;
-                    font-family: 'Poppins';
-                    font-weight: normal;
-                    font-size: 14px;
-                    text-align: justify;
-                    line-height: 26px;
-                }
+    /* -- -- Icones dos Input's -- -- */
+    .cadastrar-icons {
+        width: 20px;
+        height: 18px;
+        position: absolute;
+        left: 0;
+        transform: translateY(-50%);
+        filter: invert(18%) sepia(58%) saturate(4769%) hue-rotate(172deg) brightness(89%) contrast(102%);
+    }
 
-            #box-login-2{
-                background: linear-gradient(180deg, rgba(57,189,161,1) 0%, rgba(105,181,231,1) 100%);
-                width: 305px;
-                height: 340px;
-                margin-top: 60px;
-                text-align: center;
-                padding: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+    #email-icon {
+        top: 48%;
+        left: 11%;
+    }
 
-                border-top-left-radius: var(--border-radius-cadastro);
-                border-top-right-radius: var(--border-radius-cadastro);
-                border-bottom-left-radius: 8px;
-                border-bottom-right-radius: var(--border-radius-cadastro);
+    #senha-icon {
+        top: 44%;
+        left: 11%;
+    }
 
-                --border-radius-cadastro: 35px;
-        }
+    #box-login-2 input:is(:focus, :valid)~.cadastrar-icons {
+        filter: invert(26%) sepia(78%) saturate(1933%) hue-rotate(205deg) brightness(91%) contrast(90%);
+    }
 
+    #box-login-2 input:is(:focus, :valid)~.esconder-mostrar-senha {
+        filter: invert(18%) sepia(100%) saturate(2434%) hue-rotate(193deg) brightness(105%) contrast(83%);
+    }
 
-                /* -- -- -- Login Titulo -- -- -- */
-                #box-login-2 h1{
-                    font-family: 'Poppins';
-                    font-size: 26px;
-                    margin-bottom: 8px;
-                    color: #153b44;
-                }
-
-                /* -- -- -- Campos -- -- -- */
-                .input-field{
-                    position: relative;
-                    display: inline-block;
-                    margin: 10px;
-                    width: 300px;
-                }
-
-                    #box-login-2 input{
-                        display: inline-block;
-                        width: 80%;
-                        height: 30px;
-                        border: none;
-                        outline: none;
-                        font-size: 15px;
-                        border-bottom: 1px solid #006972;
-                        background-color: transparent;
-                        padding-left: 34px;
-                        color: #33353f;
-                        font-family: 'Poppins';
-                        font-weight: normal;
-                    }
-            
-                        ::placeholder{
-                            font-family: 'Seconda Round Light';
-                            color: #4f4f4f;
-                        }
-            
-                        #box-login-2 input:is(:focus, :valid){
-                            border-bottom: 1px solid #1d79c4;
-                        }
-
-                    /* -- -- Icones dos Input's -- -- */
-                    .cadastrar-icons{
-                        width: 20px;
-                        height: 18px;
-                        position: absolute;
-                        left: 0;
-                        transform: translateY(-50%);
-                        filter: invert(18%) sepia(58%) saturate(4769%) hue-rotate(172deg) brightness(89%) contrast(102%);
-                    }
-
-                        #email-icon{
-                            top: 48%;
-                            left: 11%;
-                        }
-
-                        #senha-icon{
-                            top: 44%;
-                            left: 11%;
-                        }
-
-                        #box-login-2 input:is(:focus, :valid) ~ .cadastrar-icons{
-                            filter: invert(26%) sepia(78%) saturate(1933%) hue-rotate(205deg) brightness(91%) contrast(90%);
-                        }
-
-                        #box-login-2 input:is(:focus, :valid) ~ .esconder-mostrar-senha{
-                            filter: invert(18%) sepia(100%) saturate(2434%) hue-rotate(193deg) brightness(105%) contrast(83%);
-                        }
-
-                    /* -- -- Icone do Olho (esconder ou mostrar senha) -- -- */
-                    .esconder-mostrar-senha{
-                        width: 20px;
-                        height: 18px;
-                        position: absolute;
-                        top: 48%;
-                        right: 11%;
-                        transform: translateY(-52%);
-                        filter: invert(30%) sepia(17%) saturate(3998%) hue-rotate(149deg) brightness(107%) contrast(93%);
-                    }
+    /* -- -- Icone do Olho (esconder ou mostrar senha) -- -- */
+    .esconder-mostrar-senha {
+        width: 20px;
+        height: 18px;
+        position: absolute;
+        top: 48%;
+        right: 11%;
+        transform: translateY(-52%);
+        filter: invert(30%) sepia(17%) saturate(3998%) hue-rotate(149deg) brightness(107%) contrast(93%);
+    }
 
     /* -- -- -- Noticias -- -- -- */
-    .noticias-letra{
-        font-size: 16px;
-        line-height: 30px;
-        margin-top: 15.36px;
-    }
-
-    #box-noticia{
-        height: 100%;
-        width: 100%;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        padding-top: 25px;
-
+    #box-noticia {
         --noticias-height: 190px;
         --noticias-width: 300px;
     }
 
-        #box-noticia-2{
-            width: 310px;
-            display: inline-block;
-            text-align: center;
-            padding: 0px;
-        }
+    #box-noticia-2 {
+        width: 310px;
+    }
 
-            #box-noticia-titulo{
-                font-family: 'RobotoCondensed Bold';
-                font-size: 20px;
-                margin-bottom: 30.72px;
-                width: 100%;
-                margin-left: 20px;
-            }
+    #box-noticia-titulo {
+        margin-left: 20px;
+    }
 
-            #box-noticia-3-grid{
-                display: grid;
-                place-items: center;
-                grid-template-columns: 100%;
-                grid-column-gap: 0px;
-                grid-row-gap: 45px;
-            }
-
-                .box-noticia-4{
-                    width: var(--noticias-width);
-                    text-align: left;
-                    margin-left: 0px;
-                }
-
-                    .box-imagem-noticia{
-                        width: var(--noticias-width);;
-                        position: relative;
-                        overflow: hidden;
-                        border-radius: 18px;
-                        height: var(--noticias-height);
-                    }
-                    
-                        .imagem-noticia{
-                            width: var(--noticias-width);
-                            height: var(--noticias-height); 
-                            border-radius: 18px;
-                            display: block;
-                        }
-
-                        .imagem-noticia-sombra{
-                            position: absolute;
-                            width: var(--noticias-width);
-                            height: var(--noticias-height); 
-                            top: 0;
-                            bottom: 0;
-                            left: 0;
-                            right: 0;
-                            opacity: 0;
-                        }
+    .imagem-noticia-sombra {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+    }
 
     /* -- -- -- Rodapé -- -- -- */
-    #box-footer{
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
+    #box-footer {
         min-height: 360px;
-        background-color: transparent;
-        font-family: 'Seconda Round Light';
     }
 }
-
-
-
-
-
