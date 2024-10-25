@@ -23,8 +23,7 @@ docker-compose up --build
 http://localhost/
 ```
 
-4. To stop docker, type:
+4. To stop docker, type "Ctrl + C" and then:
 ```bash
-taskkill
 docker-compose down
 ````
