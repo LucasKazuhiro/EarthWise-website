@@ -2,12 +2,12 @@
     <div id="box-menu">
         <div id="box-menu-2">
             <div class="logo"> 
-                <a href="../../index.php"><img src="../../menu-footer/menu/Logotipo.png" alt="" id="logotipo"></a>
+                <a href="/"><img src="../../menu-footer/menu/Logotipo.png" alt="" id="logotipo"></a>
             </div>
 
             <div id="centralizar-menu">
                 <ul>
-                    <li><a href="../../index.php"> Home </a></li>
+                    <li><a href="/"> Home </a></li>
                     <li><a href="../../sobre-nos/sobrenos.php"> Sobre Nós</a></li>
                     <li><a href="../../cadastro/cadastro.php"> Cadastro </a></li>
                 </ul>
